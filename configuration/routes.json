@@ -3,7 +3,7 @@
     "features": {
       "chaosMonkey": false,
       "cors": true,
-      "authentication": false,
+      "authentication": true,
       "groupedRoutes": false
     },
     "authentication": {

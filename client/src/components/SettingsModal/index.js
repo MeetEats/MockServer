@@ -42,31 +42,6 @@ const SettingsModal = function ({
             <button className="delete" aria-label="close" onClick={onClose} />
           </header>
           <section className="modal-card-body">
-            <div className="field" aria-label="feature-basic-auth">
-              <label className="label">Basic Authentication</label>
-              <p className="mb10">
-                Enable basic authentication on all routes. This can be
-                configured with a username and password in the configuration
-                file.
-              </p>
-              <div className="control">
-                <input
-                  id="basicAuthFeature"
-                  type="checkbox"
-                  name="basicAuthFeature"
-                  className="switch is-primary"
-                  checked={authentication}
-                  onChange={(e) =>
-                    setFeature('authentication', e.target.checked)
-                  }
-                  aria-label="feature-basic-auth-input"
-                />
-                <label htmlFor="basicAuthFeature">
-                  Enable Basic Authentication
-                </label>
-              </div>
-            </div>
-            <hr />
             <div className="field" aria-label="feature-cors">
               <label className="label">CORS</label>
               <p className="mb10">
